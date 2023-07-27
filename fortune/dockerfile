@@ -1,0 +1,5 @@
+FROM debian
+COPY webpage.sh /
+RUN apt-get install fortune
+CMD ["/bin/bash", "webpage.sh"]
+
